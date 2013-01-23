@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "079F234616AF0EAD0048887A"
-               BuildableName = "libXSPFKit.a"
-               BlueprintName = "XSPFKit"
+               BuildableName = "libxspf.a"
+               BlueprintName = "xspf"
                ReferencedContainer = "container:XSPFKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -10,7 +10,7 @@
 		079F234B16AF0EAD0048887A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234A16AF0EAD0048887A /* Cocoa.framework */; };
 		079F235D16AF0EAE0048887A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F235C16AF0EAE0048887A /* SenTestingKit.framework */; };
 		079F235E16AF0EAE0048887A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234A16AF0EAD0048887A /* Cocoa.framework */; };
-		079F236116AF0EAE0048887A /* libXSPFKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234716AF0EAD0048887A /* libXSPFKit.a */; };
+		079F236116AF0EAE0048887A /* libxspf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234716AF0EAD0048887A /* libxspf.a */; };
 		079F236716AF0EAE0048887A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 079F236516AF0EAE0048887A /* InfoPlist.strings */; };
 		079F236A16AF0EAE0048887A /* XSPFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F236916AF0EAE0048887A /* XSPFKitTests.m */; };
 		079F237C16AF0F4F0048887A /* XSPFManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F237A16AF0F4F0048887A /* XSPFManager.h */; };
@@ -25,6 +25,16 @@
 		079F239A16AFD93D0048887A /* playlist-xml-base.xspf in Resources */ = {isa = PBXBuildFile; fileRef = 079F239916AFD93D0048887A /* playlist-xml-base.xspf */; };
 		079F239C16AFD97D0048887A /* track-extensive.xspf in Resources */ = {isa = PBXBuildFile; fileRef = 079F239B16AFD97D0048887A /* track-extensive.xspf */; };
 		079F239E16AFD9C90048887A /* test2.xspf in Resources */ = {isa = PBXBuildFile; fileRef = 079F239D16AFD9C90048887A /* test2.xspf */; };
+		079F23A516AFE8580048887A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234A16AF0EAD0048887A /* Cocoa.framework */; };
+		079F23AF16AFE8580048887A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 079F23AD16AFE8580048887A /* InfoPlist.strings */; };
+		079F23B716AFE91B0048887A /* XSPFKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F235316AF0EAD0048887A /* XSPFKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079F23B816AFE91D0048887A /* XSPFManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F237A16AF0F4F0048887A /* XSPFManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079F23B916AFE91F0048887A /* XSPFPlaylist.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F238116AF100E0048887A /* XSPFPlaylist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079F23BA16AFE9210048887A /* XSPFTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F238616AF10A90048887A /* XSPFTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079F23BB16AFE92B0048887A /* XSPFManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 079F237B16AF0F4F0048887A /* XSPFManager.mm */; };
+		079F23BC16AFE92B0048887A /* XSPFPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F238216AF100E0048887A /* XSPFPlaylist.m */; };
+		079F23BD16AFE92B0048887A /* XSPFTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F238716AF10A90048887A /* XSPFTrack.m */; };
+		079F23BE16AFE92B0048887A /* XSPFReaderCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 079F239216AF1B390048887A /* XSPFReaderCallback.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		079F234716AF0EAD0048887A /* libXSPFKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXSPFKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		079F234716AF0EAD0048887A /* libxspf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxspf.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		079F234A16AF0EAD0048887A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		079F234D16AF0EAD0048887A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		079F234E16AF0EAD0048887A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -63,6 +73,12 @@
 		079F239916AFD93D0048887A /* playlist-xml-base.xspf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "playlist-xml-base.xspf"; sourceTree = "<group>"; };
 		079F239B16AFD97D0048887A /* track-extensive.xspf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "track-extensive.xspf"; sourceTree = "<group>"; };
 		079F239D16AFD9C90048887A /* test2.xspf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test2.xspf; sourceTree = "<group>"; };
+		079F23A416AFE8580048887A /* XSPFKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XSPFKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		079F23A716AFE8580048887A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		079F23A816AFE8580048887A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		079F23A916AFE8580048887A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		079F23AC16AFE8580048887A /* XSPFKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XSPFKit-Info.plist"; sourceTree = "<group>"; };
+		079F23AE16AFE8580048887A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +96,15 @@
 			files = (
 				079F235D16AF0EAE0048887A /* SenTestingKit.framework in Frameworks */,
 				079F235E16AF0EAE0048887A /* Cocoa.framework in Frameworks */,
-				079F236116AF0EAE0048887A /* libXSPFKit.a in Frameworks */,
+				079F236116AF0EAE0048887A /* libxspf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079F23A016AFE8580048887A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F23A516AFE8580048887A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +124,9 @@
 		079F234816AF0EAD0048887A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				079F234716AF0EAD0048887A /* libXSPFKit.a */,
+				079F234716AF0EAD0048887A /* libxspf.a */,
 				079F235B16AF0EAE0048887A /* XSPFKitTests.octest */,
+				079F23A416AFE8580048887A /* XSPFKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +139,7 @@
 				079F234D16AF0EAD0048887A /* AppKit.framework */,
 				079F234E16AF0EAD0048887A /* CoreData.framework */,
 				079F234F16AF0EAD0048887A /* Foundation.framework */,
+				079F23A616AFE8580048887A /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				079F235216AF0EAD0048887A /* XSPFKit-Prefix.pch */,
+				079F23AC16AFE8580048887A /* XSPFKit-Info.plist */,
+				079F23AD16AFE8580048887A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -166,6 +194,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		079F23A616AFE8580048887A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				079F23A716AFE8580048887A /* AppKit.framework */,
+				079F23A816AFE8580048887A /* CoreData.framework */,
+				079F23A916AFE8580048887A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -180,12 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079F23A116AFE8580048887A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F23B716AFE91B0048887A /* XSPFKit.h in Headers */,
+				079F23B816AFE91D0048887A /* XSPFManager.h in Headers */,
+				079F23B916AFE91F0048887A /* XSPFPlaylist.h in Headers */,
+				079F23BA16AFE9210048887A /* XSPFTrack.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		079F234616AF0EAD0048887A /* XSPFKit */ = {
+		079F234616AF0EAD0048887A /* xspf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "XSPFKit" */;
+			buildConfigurationList = 079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspf" */;
 			buildPhases = (
 				079F234316AF0EAD0048887A /* Sources */,
 				079F234416AF0EAD0048887A /* Frameworks */,
@@ -195,9 +244,9 @@
 			);
 			dependencies = (
 			);
-			name = XSPFKit;
+			name = xspf;
 			productName = XSPFKit;
-			productReference = 079F234716AF0EAD0048887A /* libXSPFKit.a */;
+			productReference = 079F234716AF0EAD0048887A /* libxspf.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		079F235A16AF0EAE0048887A /* XSPFKitTests */ = {
@@ -218,6 +267,24 @@
 			productName = XSPFKitTests;
 			productReference = 079F235B16AF0EAE0048887A /* XSPFKitTests.octest */;
 			productType = "com.apple.product-type.bundle";
+		};
+		079F23A316AFE8580048887A /* XSPFKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079F23B416AFE8580048887A /* Build configuration list for PBXNativeTarget "XSPFKit" */;
+			buildPhases = (
+				079F239F16AFE8580048887A /* Sources */,
+				079F23A016AFE8580048887A /* Frameworks */,
+				079F23A116AFE8580048887A /* Headers */,
+				079F23A216AFE8580048887A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XSPFKit;
+			productName = XSPFKit;
+			productReference = 079F23A416AFE8580048887A /* XSPFKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,7 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				079F234616AF0EAD0048887A /* XSPFKit */,
+				079F23A316AFE8580048887A /* XSPFKit */,
+				079F234616AF0EAD0048887A /* xspf */,
 				079F235A16AF0EAE0048887A /* XSPFKitTests */,
 			);
 		};
@@ -256,6 +324,14 @@
 				079F239A16AFD93D0048887A /* playlist-xml-base.xspf in Resources */,
 				079F239C16AFD97D0048887A /* track-extensive.xspf in Resources */,
 				079F239E16AFD9C90048887A /* test2.xspf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079F23A216AFE8580048887A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F23AF16AFE8580048887A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +373,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079F239F16AFE8580048887A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079F23BB16AFE92B0048887A /* XSPFManager.mm in Sources */,
+				079F23BC16AFE92B0048887A /* XSPFPlaylist.m in Sources */,
+				079F23BD16AFE92B0048887A /* XSPFTrack.m in Sources */,
+				079F23BE16AFE92B0048887A /* XSPFReaderCallback.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		079F236016AF0EAE0048887A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 079F234616AF0EAD0048887A /* XSPFKit */;
+			target = 079F234616AF0EAD0048887A /* xspf */;
 			targetProxy = 079F235F16AF0EAE0048887A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -312,6 +399,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				079F236616AF0EAE0048887A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		079F23AD16AFE8580048887A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079F23AE16AFE8580048887A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -454,6 +549,40 @@
 			};
 			name = Release;
 		};
+		079F23B516AFE8580048887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XSPFKit/XSPFKit-Prefix.pch";
+				INFOPLIST_FILE = "XSPFKit/XSPFKit-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		079F23B616AFE8580048887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XSPFKit/XSPFKit-Prefix.pch";
+				INFOPLIST_FILE = "XSPFKit/XSPFKit-Info.plist";
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "XSPFKit" */ = {
+		079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				079F236E16AF0EAE0048887A /* Debug */,
@@ -483,6 +612,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		079F23B416AFE8580048887A /* Build configuration list for PBXNativeTarget "XSPFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079F23B516AFE8580048887A /* Debug */,
+				079F23B616AFE8580048887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
