@@ -160,12 +160,14 @@ namespace XSPFKit {
     
     bool XSPFReaderCallback::handleError (int line, int column, int errorCode, XML_Char const *description)
     {
+        NSLog(@"ERR:XPSF parse in line %i column %i (%d) %s", line, column, errorCode, description);
         valid = false;
         return false;
     }
     
     bool XSPFReaderCallback::handleWarning (int line, int column, int warningCode, XML_Char const *description)
     {
-        return false;
+        NSLog(@"WARN:XPSF parse in line %i column %i (%d) %s", line, column, warningCode, description);
+        return true;
     }
 }}

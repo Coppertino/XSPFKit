@@ -10,6 +10,7 @@
 #include <Xspf.h>
 #include <XspfDefines.h>
 #include "XSPFReaderCallback.h"
+#import "XSPFPlaylist.h"
 
 using namespace Xspf;
 
@@ -49,7 +50,10 @@ using namespace Xspf;
         path = [[url absoluteString] UTF8String];
     }
     
-    reader.parseFile(_PT(path), callback, _PT(uri));
+    int res = reader.parseFile(_PT(path), callback, _PT(uri));
+    if (res != XSPF_READER_SUCCESS) {
+        NSLog(@"fail to parse %@", @(res));
+    }
     delete callback;
     
     return playlist;

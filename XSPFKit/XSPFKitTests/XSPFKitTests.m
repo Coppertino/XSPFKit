@@ -28,7 +28,8 @@
 - (void)testExample
 {
     NSBundle *mainBundle = [NSBundle bundleForClass:self.class];
-    XSPFPlaylist *pl = [[XSPFManager sharedManager] playlistFromFile:[mainBundle pathForResource:@"test1" ofType:@"xspf"]];
+//    XSPFPlaylist *pl = [[XSPFManager sharedManager] playlistFromFile:[mainBundle pathForResource:@"test1" ofType:@"xspf"]];
+    XSPFPlaylist *pl = [[XSPFManager sharedManager] playlistFromFile:@"/Users/acrist/Downloads/test.xspf"];
     NSLog(@"pl %@", pl.trackList);
     
 //    STFail(@"Unit tests are not implemented yet in XSPFKitTests");

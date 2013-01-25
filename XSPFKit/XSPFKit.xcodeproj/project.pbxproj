@@ -10,7 +10,7 @@
 		079F234B16AF0EAD0048887A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234A16AF0EAD0048887A /* Cocoa.framework */; };
 		079F235D16AF0EAE0048887A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F235C16AF0EAE0048887A /* SenTestingKit.framework */; };
 		079F235E16AF0EAE0048887A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234A16AF0EAD0048887A /* Cocoa.framework */; };
-		079F236116AF0EAE0048887A /* libxspf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234716AF0EAD0048887A /* libxspf.a */; };
+		079F236116AF0EAE0048887A /* libxspfkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234716AF0EAD0048887A /* libxspfkit.a */; };
 		079F236716AF0EAE0048887A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 079F236516AF0EAE0048887A /* InfoPlist.strings */; };
 		079F236A16AF0EAE0048887A /* XSPFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F236916AF0EAE0048887A /* XSPFKitTests.m */; };
 		079F237C16AF0F4F0048887A /* XSPFManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F237A16AF0F4F0048887A /* XSPFManager.h */; };
@@ -31,10 +31,9 @@
 		079F23B816AFE91D0048887A /* XSPFManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F237A16AF0F4F0048887A /* XSPFManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		079F23B916AFE91F0048887A /* XSPFPlaylist.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F238116AF100E0048887A /* XSPFPlaylist.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		079F23BA16AFE9210048887A /* XSPFTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 079F238616AF10A90048887A /* XSPFTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		079F23BB16AFE92B0048887A /* XSPFManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 079F237B16AF0F4F0048887A /* XSPFManager.mm */; };
-		079F23BC16AFE92B0048887A /* XSPFPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F238216AF100E0048887A /* XSPFPlaylist.m */; };
-		079F23BD16AFE92B0048887A /* XSPFTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F238716AF10A90048887A /* XSPFTrack.m */; };
-		079F23BE16AFE92B0048887A /* XSPFReaderCallback.mm in Sources */ = {isa = PBXBuildFile; fileRef = 079F239216AF1B390048887A /* XSPFReaderCallback.mm */; };
+		07B3A2E116B00E780037177E /* libxspfkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 079F234716AF0EAD0048887A /* libxspfkit.a */; };
+		07B3A2E416B00EA90037177E /* XSPFManager+Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B3A2E216B00EA90037177E /* XSPFManager+Framework.h */; };
+		07B3A2E516B00EA90037177E /* XSPFManager+Framework.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B3A2E316B00EA90037177E /* XSPFManager+Framework.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		079F234716AF0EAD0048887A /* libxspf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxspf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		079F234716AF0EAD0048887A /* libxspfkit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxspfkit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		079F234A16AF0EAD0048887A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		079F234D16AF0EAD0048887A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		079F234E16AF0EAD0048887A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -79,6 +78,8 @@
 		079F23A916AFE8580048887A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		079F23AC16AFE8580048887A /* XSPFKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XSPFKit-Info.plist"; sourceTree = "<group>"; };
 		079F23AE16AFE8580048887A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07B3A2E216B00EA90037177E /* XSPFManager+Framework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XSPFManager+Framework.h"; sourceTree = "<group>"; };
+		07B3A2E316B00EA90037177E /* XSPFManager+Framework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XSPFManager+Framework.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +97,7 @@
 			files = (
 				079F235D16AF0EAE0048887A /* SenTestingKit.framework in Frameworks */,
 				079F235E16AF0EAE0048887A /* Cocoa.framework in Frameworks */,
-				079F236116AF0EAE0048887A /* libxspf.a in Frameworks */,
+				079F236116AF0EAE0048887A /* libxspfkit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B3A2E116B00E780037177E /* libxspfkit.a in Frameworks */,
 				079F23A516AFE8580048887A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +126,7 @@
 		079F234816AF0EAD0048887A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				079F234716AF0EAD0048887A /* libxspf.a */,
+				079F234716AF0EAD0048887A /* libxspfkit.a */,
 				079F235B16AF0EAE0048887A /* XSPFKitTests.octest */,
 				079F23A416AFE8580048887A /* XSPFKit.framework */,
 			);
@@ -157,6 +159,8 @@
 				079F238716AF10A90048887A /* XSPFTrack.m */,
 				079F239316AF1B390048887A /* XSPFReaderCallback.h */,
 				079F239216AF1B390048887A /* XSPFReaderCallback.mm */,
+				07B3A2E216B00EA90037177E /* XSPFManager+Framework.h */,
+				07B3A2E316B00EA90037177E /* XSPFManager+Framework.m */,
 			);
 			path = XSPFKit;
 			sourceTree = "<group>";
@@ -226,15 +230,16 @@
 				079F23B816AFE91D0048887A /* XSPFManager.h in Headers */,
 				079F23B916AFE91F0048887A /* XSPFPlaylist.h in Headers */,
 				079F23BA16AFE9210048887A /* XSPFTrack.h in Headers */,
+				07B3A2E416B00EA90037177E /* XSPFManager+Framework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		079F234616AF0EAD0048887A /* xspf */ = {
+		079F234616AF0EAD0048887A /* xspfkit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspf" */;
+			buildConfigurationList = 079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspfkit" */;
 			buildPhases = (
 				079F234316AF0EAD0048887A /* Sources */,
 				079F234416AF0EAD0048887A /* Frameworks */,
@@ -244,9 +249,9 @@
 			);
 			dependencies = (
 			);
-			name = xspf;
+			name = xspfkit;
 			productName = XSPFKit;
-			productReference = 079F234716AF0EAD0048887A /* libxspf.a */;
+			productReference = 079F234716AF0EAD0048887A /* libxspfkit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		079F235A16AF0EAE0048887A /* XSPFKitTests */ = {
@@ -308,7 +313,7 @@
 			projectRoot = "";
 			targets = (
 				079F23A316AFE8580048887A /* XSPFKit */,
-				079F234616AF0EAD0048887A /* xspf */,
+				079F234616AF0EAD0048887A /* xspfkit */,
 				079F235A16AF0EAE0048887A /* XSPFKitTests */,
 			);
 		};
@@ -377,10 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079F23BB16AFE92B0048887A /* XSPFManager.mm in Sources */,
-				079F23BC16AFE92B0048887A /* XSPFPlaylist.m in Sources */,
-				079F23BD16AFE92B0048887A /* XSPFTrack.m in Sources */,
-				079F23BE16AFE92B0048887A /* XSPFReaderCallback.mm in Sources */,
+				07B3A2E516B00EA90037177E /* XSPFManager+Framework.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +391,7 @@
 /* Begin PBXTargetDependency section */
 		079F236016AF0EAE0048887A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 079F234616AF0EAD0048887A /* xspf */;
+			target = 079F234616AF0EAD0048887A /* xspfkit */;
 			targetProxy = 079F235F16AF0EAE0048887A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -561,6 +563,12 @@
 				INFOPLIST_FILE = "XSPFKit/XSPFKit-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = (
+					"-lXSPFKit",
+					"-lstdc++",
+					"-lexpat",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -578,6 +586,12 @@
 				INFOPLIST_FILE = "XSPFKit/XSPFKit-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)\"";
+				OTHER_LDFLAGS = (
+					"-lXSPFKit",
+					"-lstdc++",
+					"-lexpat",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -595,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspf" */ = {
+		079F236D16AF0EAE0048887A /* Build configuration list for PBXNativeTarget "xspfkit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				079F236E16AF0EAE0048887A /* Debug */,
@@ -620,6 +634,7 @@
 				079F23B616AFE8580048887A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

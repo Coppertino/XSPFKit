@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XSPFPlaylist.h"
-@interface XSPFManager : NSObject
+@class XSPFPlaylist;
 
+@interface XSPFManager : NSObject
 /**
  Returns the shared instance of XSPFManager
  */
