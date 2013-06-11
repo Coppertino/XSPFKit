@@ -20,5 +20,7 @@
 - (XSPFPlaylist *) playlistFromString:(NSString *)string;
 - (XSPFPlaylist *) playlistFromData:(NSData *)data;
 
+- (BOOL)writePlaylist:(XSPFPlaylist *)playlist toUrl:(NSURL *)url;
+
 
 @end

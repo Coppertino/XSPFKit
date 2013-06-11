@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSURL *image;
 @property (nonatomic, retain) NSString *album;
 @property (nonatomic, retain) NSNumber *trackNumber;
+/** Duration in miliseconds */
 @property (nonatomic, retain) NSNumber *duration;
 @property (nonatomic, retain) NSMutableArray *links;
 @property (nonatomic, retain) NSMutableArray *meta;
