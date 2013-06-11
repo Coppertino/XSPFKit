@@ -66,8 +66,14 @@ using namespace Xspf;
     
     XspfProps props;
     
-//    XspfDateTime dateTime;
-//    props.lendDate(&dateTime);
+    // strange way to create current date as XspfDateTime: create string and parse it
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    [df setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
+    
+    XspfDateTime dateTime;
+    XspfDateTime::extractDateTime(_PT([[df stringFromDate:[NSDate date]] UTF8String]), &dateTime);
+    props.lendDate(&dateTime);
+    
     if (playlist.title) props.lendTitle(_PT([playlist.title UTF8String]));
     if (playlist.author) props.lendCreator(_PT([playlist.author UTF8String]));
     if (playlist.comment) props.lendAnnotation(_PT([playlist.comment UTF8String]));
